@@ -10,7 +10,7 @@
 
 	$message     	= "Name/Gruppe: $name, \nNachricht: $msg, \nEmail: $email, \nTelefon: $cell, \nGäste: $count";
 
-	if(mail('oliver.roos@outlook.com', "Test Sub", $message))
+	if(mail('oliver.roos@outlook.com', "Hoffäscht 2020 Anmeldung von $name", $message))
 		$form_data['success'] = true;
 	else
 		$form_data['success'] = false;
