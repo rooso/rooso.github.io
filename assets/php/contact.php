@@ -2,18 +2,15 @@
 
 	$form_data = [];
 
-	$fname        	= $_POST['fname'];
-	$lname        	= $_POST['lname'];
+	$name        	= $_POST['name'];
+	$msg       	= $_POST['msg'];
 	$email        	= $_POST['email'];
 	$cell        	= $_POST['cell'];
-	$address    	= $_POST['address'];
-	$zip        	= $_POST['zip'];
-	$city        	= $_POST['city'];
-	$program    	= $_POST['program'];
+	$count        	= $_POST['count'];
 
-	$message     	= "First Name: $fname, \nLast Name: $lname, \nEmail: $email, \nCell: $cell, \nAddress: $address, \nZip Code: $zip, \nCity: $city, \nProgram: $program.";
+	$message     	= "Name/Gruppe: $name, \nNachricht: $msg, \nEmail: $email, \nTelefon: $cell, \nGäste: $count";
 
-	if(mail('example@gmail.com', "Test Sub", $message))
+	if(mail('oliver.roos@outlook.com', "Test Sub", $message))
 		$form_data['success'] = true;
 	else
 		$form_data['success'] = false;
