@@ -220,7 +220,7 @@
 					<p>Danke das du dech amäldisch! Das ged üs e Planigssicherheit ond der es hoffentlech onvergässlechs Hoffäscht.</p>
                 </div>
             </div>
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLSexjtlbbh8OXMJC8jRzXqf4RMYcCcIemSD0EiUapsUCvTrclw/fromResponse?" id="registration-form" target="hidden_iframe" onsubmit="submitted=true;">
+            <form name="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSexjtlbbh8OXMJC8jRzXqf4RMYcCcIemSD0EiUapsUCvTrclw/fromResponse?" id="registration-form" target="hidden_iframe" onsubmit="submitted=true;">
                 <div class="row">
                     <div class="col-md-12" id="registration-msg" style="display:none;">
                         <div class="alert"></div>
@@ -265,6 +265,8 @@
                 <div class="text-center mt20">
                     <button type="submit" class="btn btn-black" id="registration-submit-btn">Amälde</button>
                 </div>
+            </form>
+			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 				<script src="assets/js/jquery.min.js"></script>
 				<script type="text/javascript">var submitted=false;</script>
 				<script type="text/javascript">
@@ -273,8 +275,6 @@
 				  $('#gform').prepend('Danke, dini Amäldig heds verscheckt ...');
 				  });
 				</script>
-            </form>
-			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
         </div>
     </section>
 
