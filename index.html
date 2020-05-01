@@ -220,33 +220,33 @@
 					<p>Danke das du dech amäldisch! Das ged üs e Planigssicherheit ond der es hoffentlech onvergässlechs Hoffäscht.</p>
                 </div>
             </div>
-            <form action="http://formspree.io/oliver.roos@outlook.com" id="registration-form">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSexjtlbbh8OXMJC8jRzXqf4RMYcCcIemSD0EiUapsUCvTrclw/fromResponse?" id="registration-form" target="hidden_iframe" onsubmit="submitted=true;">
                 <div class="row">
                     <div class="col-md-12" id="registration-msg" style="display:none;">
                         <div class="alert"></div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name / Groppe / ..." id="name" name="name" required>
+                            <input type="text" class="form-control" placeholder="Name / Groppe / ..." id="entry.1524156099" name="entry.1524156099" required>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Wort zom Sonntig oder sösch öpis ..." id="msg" name="msg" required>
+                            <input type="text" class="form-control" placeholder="Wort zom Sonntig oder sösch öpis ..." id="ntry.415107475" name="ntry.415107475" required>
                         </div>
 
                     </div>
 
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="E-Mail" id="email" name="email" required>
+                            <input type="email" class="form-control" placeholder="E-Mail" id="entry.1534779706" name="entry.1534779706" required>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Telefon / Handy" id="cell" name="cell" required>
+                            <input type="text" class="form-control" placeholder="Telefon / Handy" id="entry.2082093737" name="entry.2082093737" required>
                         </div>
 
                         <div class="form-group">
-                            <select class="form-control" name="count" id="count" required>
+                            <select class="form-control" name="entry.941176642" id="entry.941176642" required>
                                 <option readonly>Azahl Bsuecher</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -265,7 +265,16 @@
                 <div class="text-center mt20">
                     <button type="submit" class="btn btn-black" id="registration-submit-btn">Amälde</button>
                 </div>
+				<script src="assets/js/jquery.min.js"></script>
+				<script type="text/javascript">var submitted=false;</script>
+				<script type="text/javascript">
+				$('#gform').on('submit', function(e) {
+				  $('#gform *').fadeOut(2000);
+				  $('#gform').prepend('Danke, dini Amäldig heds verscheckt ...');
+				  });
+				</script>
             </form>
+			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
         </div>
     </section>
 
