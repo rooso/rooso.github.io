@@ -57,11 +57,11 @@
         <div class="intro">
 		
 			<img src="assets/images/logo.png" alt="Logo"><br /><br />
-            <h2>31. Juli 2020 / Biohof Oberhasli</h2>
+            <h2>25. Juli 2020 / Biohof Oberhasli</h2>
             
             <h1>Sämi's Hoffäscht 2020 #CoronaEdition</h1>
             
-            <p>De Virus nehmt üs ned alles!</p>
+            <p>Eifach chli andersch, als s'Vorjohr</p>
             
             <a class="btn btn-white" data-scroll href="#registration">Jetzt Amälde</a>
         
@@ -87,7 +87,7 @@
 
                     <h3 class="section-title multiple-title">Was heisst das ez?</h3>
 
-                    <p>Mer gönd defo us, das es Hoffäscht im bekannte Rahme im Juli daf stattfinde. Aber au üs lid <s>üchi</s> üsi Gsondheit am Härze. Drom, freu dech ufs Höffäscht aber chom de ned go mötzle wenn mer's mönd absäge. </p>
+                    <p>Mer gönd defo us, das es Hoffäscht im bekannte Rahme im Juli daf stattfinde. Aber au üs lid <s>üchi</s> üsi Gsondheit am Härze. Vorfreud esch jo bekanntlech die schönst Freud. Wenn mer's denn doch müend absäge, hemmer acht wohlgformti ond starchi Scholtere zom üch tröschte. </p>
 
                     <ul class="list-arrow-right">
 
@@ -110,7 +110,7 @@
                 <div class="col-sm-3">
 
                     <i class="ion-ios-calendar"></i>
-                    <h3>31 Juli<br>2020</h3>
+                    <h3>25 Juli<br>2020</h3>
                 
                 </div>
                 <div class="col-sm-3">
@@ -217,64 +217,44 @@
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="section-title">Ech chome as Hoffäscht</h3>
-					<p>Danke das du dech amäldisch! Das ged üs e Planigssicherheit ond der es hoffentlech onvergässlechs Hoffäscht.</p>
+					<p>Danke das du dech amäldisch! Das ged üs e Planigssicherheit ond der es hoffentlech onvergässlechs Hoffäscht.<br /><red>* Pflichtfelder</red></p>
                 </div>
             </div>
-            <form name="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSexjtlbbh8OXMJC8jRzXqf4RMYcCcIemSD0EiUapsUCvTrclw/fromResponse?" id="registration-form" target="hidden_iframe" onsubmit="submitted=true;">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSexjtlbbh8OXMJC8jRzXqf4RMYcCcIemSD0EiUapsUCvTrclw/formResponse" id="registration-form">
                 <div class="row">
                     <div class="col-md-12" id="registration-msg" style="display:none;">
                         <div class="alert"></div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name / Groppe / ..." id="entry.1524156099" name="entry.1524156099" required>
+                            <input type="text" class="form-control" placeholder="Name / Groppe / ... *" id="name" name="entry.1524156099" required>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Wort zom Sonntig oder sösch öpis ..." id="ntry.415107475" name="ntry.415107475" required>
+                            <input type="text" class="form-control" placeholder="Wort zom Sonntig oder sösch öpis ..." id="msg" name="entry.415107475">
                         </div>
 
                     </div>
 
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="E-Mail" id="entry.1534779706" name="entry.1534779706" required>
+                            <input type="email" class="form-control" placeholder="E-Mail*" id="mail" name="entry.1534779706" required>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Telefon / Handy" id="entry.2082093737" name="entry.2082093737" required>
+                            <input type="text" class="form-control" placeholder="Telefon / Handy*" id="phone" name="entry.2082093737" required>
                         </div>
 
                         <div class="form-group">
-                            <select class="form-control" name="entry.941176642" id="entry.941176642" required>
-                                <option readonly>Azahl Bsuecher</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                            </select>
+                            <input type="text" class="form-control" placeholder="Azahl Bsuecher*" id="name" name="entry.941176642" required>
                         </div>
 
                     </div>
                 </div>
                 <div class="text-center mt20">
-                    <button type="submit" class="btn btn-black" id="registration-submit-btn">Amälde</button>
+					<input type="submit" class="btn btn-black" id="registration-submit-btn" value="Amälde">
                 </div>
             </form>
-			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-				<script src="assets/js/jquery.min.js"></script>
-				<script type="text/javascript">var submitted=false;</script>
-				<script type="text/javascript">
-				$('#gform').on('submit', function(e) {
-				  $('#gform *').fadeOut(2000);
-				  $('#gform').prepend('Danke, dini Amäldig heds verscheckt ...');
-				  });
-				</script>
         </div>
     </section>
 
@@ -282,9 +262,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="text-uppercase mt0 font-400">Bezli Musig. Betzli Festival.</h3>
+                    <h3 class="text-uppercase mt0 font-400">Betzli Musig. Betzli Festival.</h3>
                     
-                    <p>En Sommer ohni Festivals? Onvorstellbar. Mer chönd keis Festival au nor annährend ersetze, aber e mer chönd e betz Festivalstemmig loh ufcho.<br />Drom geds das Johr au öpis uf d Ohre, ned nor vo de wältbekannte DJ's SPOTI&FY, das Johr organisiere mer au Musiker ond Bands!</p>
+                    <p>En Sommer ohni Festivals? Onvorstellbar. Mer chönd keis Festival au nor annährend ersetze, aber e mer chönd e betz Festivalstemmig loh ufcho.<br />Drom geds das Johr au öpis uf d Ohre, ned nor vo de wältbekannte DJ's SPOTI&FY, das Johr probiere mer au Musiker ond Bands z'organisiere!</p>
 
                 </div>
             </div>
@@ -502,11 +482,11 @@
                 <div class="col-sm-3">
                     <h3 class="section-title">Fäschtplatz</h3>
                     <address>
-                        <p>Biohof Oberhasli<br> Oberhasli<br>6032 Emmen<br><br> Es paar Parkplatz heds,<br> aber s Velo esch eh gsönder!<br><br> Hesch grad e Frog?<br>hello@hoffäscht.ch</p>
+                        <p>Biohof Oberhasli<br> Oberhasli 66a<br>6032 Emmen<br><br> Es paar Parkplatz heds,<br> aber s Velo esch eh gsönder!<br><br> Hesch grad e Frog?<br>079 XXX XX XX</p>
                     </address>
                 </div>
                 <div class="col-sm-9">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2716.4436621400423!2d8.310791715780667!3d47.090372531488185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ffc5f8eb18acd%3A0x2c335cfff2715232!2sOberhasli%2C%206032%20Emmen!5e0!3m2!1sde!2sch!4v1588278554708!5m2!1sde!2sch" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.2625971438442!2d8.311312715810944!3d47.0906006314724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ffc5f871f4603%3A0xfecc4df1fa3049e7!2sOberhasli%2066%2C%206032%20Emmen!5e1!3m2!1sde!2sch!4v1588427237212!5m2!1sde!2sch" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -523,7 +503,7 @@
     </footer>
 
     <!-- script -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
     <script src="assets/js/main.js"></script>
